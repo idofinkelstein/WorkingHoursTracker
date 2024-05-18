@@ -25,7 +25,7 @@ class IOHandler(object):
     def read_lines_from_csv(csv_file):
         rows = []
         try:
-            with open(IOHandler.FULL_PATH, 'r', newline='') as f:
+            with open(csv_file, 'r', newline='') as f:
                 csv_reader = csv.reader(f)
                 for row in csv_reader:
                     rows.append(row)
